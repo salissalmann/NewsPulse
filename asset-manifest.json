@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/NewsPulse/static/css/main.073c9b0a.css",
+    "main.js": "/NewsPulse/static/js/main.352c1a29.js",
+    "static/media/loading.gif": "/NewsPulse/static/media/loading.321e0a62504d409fcc93.gif",
+    "index.html": "/NewsPulse/index.html",
+    "main.073c9b0a.css.map": "/NewsPulse/static/css/main.073c9b0a.css.map",
+    "main.352c1a29.js.map": "/NewsPulse/static/js/main.352c1a29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.352c1a29.js"
+  ]
+}
