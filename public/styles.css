@@ -1,0 +1,105 @@
+.loader {
+    --cell-size: 52px;
+    --cell-spacing: 1px;
+    --cells: 3;
+    --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--total-size);
+    height: var(--total-size);
+  }
+  
+  .cell {
+    flex: 0 0 var(--cell-size);
+    margin: var(--cell-spacing);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    animation: 1.5s ripple ease infinite;
+  }
+  
+  .cell.d-1 {
+    animation-delay: 100ms;
+  }
+  
+  .cell.d-2 {
+    animation-delay: 200ms;
+  }
+  
+  .cell.d-3 {
+    animation-delay: 300ms;
+  }
+  
+  .cell.d-4 {
+    animation-delay: 400ms;
+  }
+  
+  .cell:nth-child(1) {
+    --cell-color: #ff0000;
+  }
+  
+  .cell:nth-child(2) {
+    --cell-color: #fd0c48;
+  }
+  
+  .cell:nth-child(3) {
+    --cell-color: #fb1750;
+  }
+  
+  .cell:nth-child(4) {
+    --cell-color: #f92351;
+  }
+  
+  .cell:nth-child(5) {
+    --cell-color: #f7305b;
+  }
+  
+  .cell:nth-child(6) {
+    --cell-color: #f53d5c;
+  }
+  
+  .cell:nth-child(7) {
+    --cell-color: #f4458e;
+  }
+  
+  .cell:nth-child(8) {
+    --cell-color: #f1536d;
+  }
+  
+  .cell:nth-child(9) {
+    --cell-color: #ff60a2;
+  }
+  
+  /*Animation*/
+  @keyframes ripple {
+    0% {
+      background-color: transparent;
+    }
+  
+    30% {
+      background-color: var(--cell-color);
+    }
+  
+    60% {
+      background-color: transparent;
+    }
+  
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  .author
+  {
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    color: white;
+  }
+  
+  .news
+  {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }

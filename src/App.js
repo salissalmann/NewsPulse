@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+//import { News } from './components/News';
+//import { NewsAPI } from './components/NewsApi';
+//import { PaginationApi } from './components/PaginationApi';
+//import { Spinner } from './components/Spinner';
+//import { Inifinity } from './components/InfinityScroll';
+import { FunctionalNews } from './components/FunctionalNews'
+import NavigationBar from './components/NavigationBar';
+import NewsStates from './context/newsstates';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component 
+{
+  render() 
+  {
+    return (
+      <>
+      <NewsStates>
+          <NavigationBar/>  
+          <FunctionalNews pageSize={8} />
+      </NewsStates>
+      </>
+    )}
 }
 
-export default App;
