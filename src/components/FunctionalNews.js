@@ -56,7 +56,7 @@ export function FunctionalNews(props)
    let i=0;
    return (
     <>
-        (articles.length===0) ? : (
+        {(articles.length===0) ? : (
             <div className='container my-4'>
                 {loading && <Spin/>}
             </div>
@@ -82,7 +82,7 @@ export function FunctionalNews(props)
                 <button disable={(page===1)?true:false}type="button" className="btn btn-dark" onClick={HandlePrev}>Previous</button>
                 <button type="button" className="btn btn-dark" onClick={HandleNext}>Next</button>
             </div>    
-        </div>)
+        </div>)}
         
     </>
     )
