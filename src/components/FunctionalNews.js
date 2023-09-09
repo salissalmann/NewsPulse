@@ -56,7 +56,7 @@ export function FunctionalNews(props)
    let i=0;
    return (
     <>
-        {(articles.length===0) ? (
+        {(articles && articles.length===0) ? (
             <div className='container my-4'>
                 {loading && <Spin/>}
             </div>
