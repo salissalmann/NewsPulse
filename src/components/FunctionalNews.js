@@ -67,7 +67,7 @@ export function FunctionalNews(props)
             {loading && <Spin/>}
         
             <div className='row'>       
-            {!loading && articles.map( (element) => 
+            {!loading && articles&& articles.map( (element) => 
                 { 
                     return( 
                     <div className='col-lg-3 my-2' key={element.id}>
